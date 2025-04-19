@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerInventoryHandler : MonoBehaviour
 {
-    public Inventory inventory;
+    public iteminventory inventory;
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {

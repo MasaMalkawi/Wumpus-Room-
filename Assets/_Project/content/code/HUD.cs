@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    public Inventory Inventory;
+    public iteminventory Inventory;
     public Transform InventoryPanel;
 
     // Use this for initialization

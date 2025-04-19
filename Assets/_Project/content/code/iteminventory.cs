@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class iteminventory : MonoBehaviour
 {
     private const int SLOTS = 6;
     private List<IInventoryItem> mItems = new List<IInventoryItem>();
