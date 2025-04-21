@@ -23,7 +23,7 @@ public class HUD : MonoBehaviour
 
         foreach (Transform slot in InventoryPanel)
         {
-            // Border... Image
+            
             Image image = slot.GetChild(0).GetChild(0).GetComponent<Image>();
             // We found the empty slot
             if (!image.enabled)
