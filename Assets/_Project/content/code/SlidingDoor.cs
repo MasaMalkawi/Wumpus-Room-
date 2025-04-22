@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System;
 
 public class SlidingDoor : MonoBehaviour
 {
@@ -13,11 +15,14 @@ public class SlidingDoor : MonoBehaviour
 
     private Vector3 leftClosedPos;
     private Vector3 rightClosedPos;
+   
+   
 
     void Start()
     {
         leftClosedPos = leftDoor.position;
         rightClosedPos = rightDoor.position;
+    
     }
 
     void Update()
@@ -29,7 +34,10 @@ public class SlidingDoor : MonoBehaviour
         Vector3 leftTarget = shouldOpen ? leftClosedPos + leftOpenOffset : leftClosedPos;
         Vector3 rightTarget = shouldOpen ? rightClosedPos + rightOpenOffset : rightClosedPos;
 
+       
         leftDoor.position = Vector3.Lerp(leftDoor.position, leftTarget, Time.deltaTime * openSpeed);
         rightDoor.position = Vector3.Lerp(rightDoor.position, rightTarget, Time.deltaTime * openSpeed);
+      
+
     }
 }
