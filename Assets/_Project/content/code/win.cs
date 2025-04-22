@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class win : MonoBehaviour
 {
     public Animator anim;
     public GameObject player;
     public GameObject hintUI;
-
+    
     private bool isPlayerNear = false;
 
     void Start()
@@ -21,6 +21,8 @@ public class win : MonoBehaviour
         {
             Debug.Log("box Opened!");
             anim.SetBool("open", true);
+          
+            SceneManager.LoadScene("You win");
         }
        
     }
